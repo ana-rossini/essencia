@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "essencia",
+    "slug": "essencia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.anonymous.essencia"
+    },
+    "web": {},
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Montserrat-Regular.ttf",
+            "./assets/fonts/Rye-Regular.ttf",
+            "./assets/fonts/CormorantGaramond-Regular.ttf"
+          ]
+        }
+      ]
+    ]
+  }
+}
