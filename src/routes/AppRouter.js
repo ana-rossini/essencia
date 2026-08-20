@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Welcome } from "../pages/Welcome/Welcome";
 import { Login } from "../pages/Login/Login";
+import { Register } from "../pages/Register/Register";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,10 @@ export default function AppRouter() {
       <Stack.Screen
         name="Login"
         component={Login}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
       />
     </Stack.Navigator>
   );

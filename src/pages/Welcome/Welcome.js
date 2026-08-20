@@ -21,6 +21,10 @@ export function Welcome() {
       />
 
       <SafeAreaView style={styles.safeArea}>
+        <View style={styles.header}>
+
+        </View>
+        
         <View style={styles.welcomeTextContainer}>
           <Text style={styles.title}>Bem-vinda à Essência Western</Text>
           <Text style={styles.subTitle}>
