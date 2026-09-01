@@ -46,31 +46,7 @@ export const styles = StyleSheet.create({
         fontFamily: colors.fontRye,
         marginBottom: 10
     },
-
-    input: {
-        borderWidth: 1,
-        borderColor: "#ccc",
-        borderRadius: 8,
-        padding: 10,
-        marginVertical: 10,
-        width: "100%",
-        fontFamily: colors.fontMontserrat,
-    },
-
-    loginButton: {
-        backgroundColor: colors.brown,
-        padding: 10,
-        width: "50%",
-        marginTop: 10,
-        borderRadius: 8,
-    },
-
-    loginButtonText: {
-        color: "white",
-        textAlign: "center",
-        fontFamily: colors.fontMontserrat,
-    },
-
+    
     exploreText: {
         marginTop: 20,
         fontSize: 15,

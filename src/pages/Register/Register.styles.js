@@ -18,14 +18,24 @@ export const styles = StyleSheet.create({
     left: 0,
   },
 
+  scrollContent: {
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 32,
+    paddingBottom: 56,
+  },
+
   logo: {
     width: 150,
     height: 150,
     marginBottom: 20,
+    marginTop: 80,
     borderRadius: 100,
   },
 
   safeArea: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
@@ -35,7 +45,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.white,
     padding: 22,
     borderRadius: 10,
-    width: "80%",
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
   },
