@@ -7,33 +7,42 @@ import { useState } from "react";
 import { Button } from "../../components/Button/Button";
 import { Alert } from "react-native";
 import { Input } from "../../components/Input/Input";
+import { useNavigation } from "@react-navigation/native";
 
-export function Login() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
+  const navigation = useNavigation();
 
   function handleLogin() {
-        if (!email.trim() || !senha.trim()) {
-            Alert.alert("Campos incompletos", "Por favor, preencha todos os campos do formulário.");
-            return;
-        }
+    // if (!email.trim() || !senha.trim()) {
+    //   Alert.alert(
+    //     "Campos incompletos",
+    //     "Por favor, preencha todos os campos do formulário.",
+    //   );
+    //   return;
+    // }
 
-        if (!email.includes("@") || !email.includes(".")) {
-            Alert.alert("E-mail inválido", "Por favor, insira um e-mail válido.");
-            return;
-        }
+    // if (!email.includes("@") || !email.includes(".")) {
+    //   Alert.alert("E-mail inválido", "Por favor, insira um e-mail válido.");
+    //   return;
+    // }
 
-        if (senha.length < 6) {
-            Alert.alert("Senha inválida", "A senha deve ter pelo menos 6 caracteres.");
-            return;
-        }
+    // if (senha.length < 6) {
+    //   Alert.alert(
+    //     "Senha inválida",
+    //     "A senha deve ter pelo menos 6 caracteres.",
+    //   );
+    //   return;
+    // }
 
-        Alert.alert("Login realizado", "Login realizado com sucesso!", [{
-            text: "Ir para a página inicial",
-            onPress: () => navigation.navigate("Home"),
-        }
-        ]);
-    }
+    Alert.alert("Login realizado", "Login realizado com sucesso!", [
+      {
+        text: "Ir para a página inicial",
+        onPress: () => navigation.navigate("Home"),
+      },
+    ]);
+  }
 
   return (
     <View style={styles.container}>

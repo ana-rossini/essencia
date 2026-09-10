@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Input } from "../../components/Input/Input";
 import { Button } from "../../components/Button/Button";
 
-export function Register() {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");

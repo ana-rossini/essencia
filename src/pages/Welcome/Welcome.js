@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native";
 
-export function Welcome() {
+export default function Welcome() {
   const navigation = useNavigation();
 
   return (
